@@ -51,6 +51,10 @@ namespace ExceptionHandlingExercise
                 {
                     Console.WriteLine($"Unable to Parse '{c}'. {err.Message}");
                 }
+                catch (Exception err)
+                {
+                    Console.WriteLine(err.Message);
+                }
             }
             
             // Uncomment the code below to see the numbers you successfully added to the numbers list: 
