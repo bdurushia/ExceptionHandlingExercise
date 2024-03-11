@@ -47,7 +47,7 @@ namespace ExceptionHandlingExercise
                     // numbers.Add(num);
                     numbers.Add(int.Parse(c.ToString())); // I like this better so I'm using this line instead
                 }
-                catch (Exception err)
+                catch (FormatException err)
                 {
                     Console.WriteLine($"Unable to Parse '{c}'. {err.Message}");
                 }
